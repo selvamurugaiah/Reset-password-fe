@@ -21,11 +21,19 @@ const Header = () => {
         setAnchorEl(null);
     };
 
+    const navigate = useNavigate();
 
     const logoutuser = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("https://password-reset-11vu.onrender.com/logout", {
+
+            localStorage.clear()
+            navigate('/')
+        
+{
+    /*
+    
+       const res = await fetch("https://password-reset-11vu.onrender.com/logout", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -38,7 +46,7 @@ const Header = () => {
         const data = await res.json();
         console.log(data);
 
-        if (data.status == 201) {
+        if (data.status == 20) {
             console.log("use logout");
             localStorage.removeItem("usersdatatoken");
             setLoginData(false)
@@ -46,6 +54,11 @@ const Header = () => {
         } else {
             console.log("error");
         }
+    
+    
+    */ 
+}
+     
     }
 
     const goDash = () => {
