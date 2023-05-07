@@ -69,6 +69,7 @@ const Login = () => {
                 localStorage.setItem("usersdatatoken",res.result.token);
                 history("/dash")
                 setInpval({...inpval,email:"",password:""});
+               
             }else{
                 toast.error("Invalid Credentials", {
                     position: "top-center"
@@ -76,6 +77,8 @@ const Login = () => {
             }
         }
     }
+ 
+
 
     return (
         <>
@@ -101,7 +104,9 @@ const Login = () => {
                             </div>
                         </div>
 
-                        <button className='btn' onClick={loginuser}>Login</button>
+                      <button className='btn' onClick={loginuser}
+                      
+                      >Login</button>
                         <p>Don't have an Account? <NavLink to="/register">Sign Up</NavLink> </p>
                         <p style={{color:"black",fontWeight:"bold"}}>Forgot Password  <NavLink to="/password-reset">Click Here</NavLink> </p>
                     </form>

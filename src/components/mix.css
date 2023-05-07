@@ -123,3 +123,11 @@ form .btn:hover{
 nav{
    border-bottom: 2px solid rgb(204, 197, 197);
 }
+
+#url-short{
+   border: 2px solid rgb(151, 148, 148);
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #bdb8b8;
+    color: black;
+}

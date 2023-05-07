@@ -44,12 +44,15 @@ const Dashboard = () => {
 
     }, [])
 
+    
+
     return (
         <>
             {
                 data ? <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <img src="./man.png" style={{ width: "200px", marginTop: 20 }} alt="" />
                     <h1>User Email:{logindata ? logindata.ValidUserOne.email : ""}</h1>
+                    <a href='https://url-shortner-c6z6.onrender.com/' id='url-short'>URL SHORTNER ➡️</a>
                 </div> : <Box sx={{ display: 'flex', justifyContent: "center", alignItems: "center", height: "100vh" }}>
                     Loading... &nbsp;
                     <CircularProgress />
